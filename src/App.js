@@ -442,7 +442,7 @@ ${allAppts.filter(a=>!a.done&&a.date>=today).map(a=>`  • [${a.listName}] ${fmt
               ))}
             </div>
           )}
-          <div style={{display:"flex",gap:8"}}>
+          <div style={{display:"flex",gap:8}}>
             <input value={dtText} onChange={e=>setDtText(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addDayTask(d)} placeholder="Add a task for this day…" style={{flex:1}}/>
             <input type="time" value={dtTime} onChange={e=>setDtTime(e.target.value)} style={{width:100,flexShrink:0}}/>
             <button className="bp" onClick={()=>addDayTask(d)} style={{padding:"9px 14px",flexShrink:0}}>+</button>
